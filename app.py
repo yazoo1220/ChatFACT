@@ -19,14 +19,12 @@ def get_state():
      return st.session_state.state 
 state = get_state()
 
-st.write(state['memory'].load_memory_variables({}))
-
 prompt = PromptTemplate(
     input_variables=["chat_history","input"], 
     template='Based on the following chat_history, Please reply to the question in format of markdown. history: {chat_history}. question: {input}'
 )
 
-user_input = st.text_input("You: ",placeholder = "Ask me anything ...")
+user_input = st.text_area("You: ",placeholder = "一日1リットルの水素水でがんは確実に治ります。")
 ask = st.button('ask',type='primary')
 st.markdown("----")
 
