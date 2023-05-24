@@ -10,7 +10,7 @@ from langchain.memory import ConversationBufferMemory
 import openai
 from typing import Any, Dict, List
 
-st.header("ChatFACT")
+st.header("🤔ChatFACT")
 st.subheader("get the summary of the text only with the facts")
                                   
 def get_state(): 
