@@ -48,9 +48,7 @@ if ask:
         report = []
         chat = ChatOpenAI(streaming=True, temperature=0.9)
         conversation = LLMSummarizationCheckerChain.from_llm(
-            llm=chat, 
-            prompt=prompt,
-            memory=state['memory'],
+            llm=chat,
             max_check=2,
             verbose=True
         )
