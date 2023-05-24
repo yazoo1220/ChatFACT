@@ -47,8 +47,7 @@ if ask:
     with st.spinner('typing...'):
         report = []
         chat = ChatOpenAI(streaming=True, temperature=0.9)
-        conversation = LLMSummarizationCheckerChain
-        from_llm(
+        conversation = LLMSummarizationCheckerChain.from_llm(
             llm=chat, 
             prompt=prompt,
             memory=state['memory'],
