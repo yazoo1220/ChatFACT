@@ -53,5 +53,5 @@ if ask:
             verbose=True
         )
         res = conversation.run(user_input) #, callbacks=[handler])
-    
+        st.markdown(res)
 st.markdown("----")
