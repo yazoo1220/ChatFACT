@@ -49,7 +49,7 @@ if ask:
         chat = ChatOpenAI(streaming=True, temperature=0.9)
         conversation = LLMSummarizationCheckerChain.from_llm(
             llm=chat,
-            max_check=2,
+            #max_check=2,
             verbose=True
         )
         res = conversation.run(user_input) #, callbacks=[handler])
