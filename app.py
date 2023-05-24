@@ -52,6 +52,6 @@ if ask:
             max_check=2,
             verbose=True
         )
-        res = conversation.run(user_input). #, callbacks=[handler])
+        res = conversation.run(user_input) #, callbacks=[handler])
     
 st.markdown("----")
